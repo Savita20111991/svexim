@@ -1,0 +1,7 @@
+{
+  "name": "Savita Global Group of Industries",
+  "description": "Professional export-grade industrial manufacturing and export portal featuring AI-powered translation, content generation, and product management.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

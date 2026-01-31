@@ -1,0 +1,89 @@
+
+body { 
+  font-family: 'Inter', sans-serif; 
+  scroll-behavior: smooth; 
+  margin: 0; 
+  padding: 0; 
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: 'Poppins', sans-serif; 
+}
+
+.overflow-x-hidden { 
+  overflow-x: hidden; 
+}
+
+@keyframes spin-slow {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+.logo-3d {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Google Translate Customization */
+#google_translate_element { 
+  display: inline-block; 
+}
+
+.goog-te-gadget-simple {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  padding: 6px 12px !important;
+  border-radius: 12px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #475569 !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.goog-te-gadget-simple img { 
+  display: none !important; 
+}
+
+.goog-te-banner-frame { 
+  display: none !important; 
+}
+
+body { 
+  top: 0px !important; 
+}
+
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out forwards;
+}
